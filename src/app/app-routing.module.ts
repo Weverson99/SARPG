@@ -14,7 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },  { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
+  { path: 'cadpersona', loadChildren: './cadpersona/cadpersona.module#CadpersonaPageModule' },
+  { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' }
+
 ];
 
 @NgModule({
