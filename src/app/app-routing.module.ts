@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth-guard';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './home/home.module#HomePageModule',
+    canActivate: [AuthGuard]
   },
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  },  { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
+  },
+  { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
   { path: 'cadpersona', loadChildren: './cadpersona/cadpersona.module#CadpersonaPageModule' },
-  { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' }
+  { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
 
 ];
 
