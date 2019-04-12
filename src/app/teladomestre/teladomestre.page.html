@@ -1,9 +1,43 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>teladomestre</ion-title>
+    <!-- Linkar nome da sala e do mestre-->
+    <ion-title>Sala X de "mestre"</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+          
+    <ion-card>
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>Personagem 1</ion-label>
+        <ion-button fill="outline" slot="end">Selecionar</ion-button>
+      </ion-item>
+    
+      <ion-card-content>
+          <ion-item>
+              <ion-label position="floating">Observações</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+        Descrição do personagem
+      </ion-card-content>
+    </ion-card>
 
+    <ion-card>
+        <ion-item>
+          <ion-icon name="person" slot="start"></ion-icon>
+          <ion-label>Personagem 2</ion-label>
+          <ion-button fill="outline" slot="end">Selecionar</ion-button>
+        </ion-item>
+      
+        <ion-card-content>
+            <ion-item>
+                <ion-label position="floating">Observações</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            Descrição do personagem
+        </ion-card-content>
+      </ion-card>
+    
+    
 </ion-content>

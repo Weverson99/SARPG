@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar>
+    <!-- Linkar nome do personagem -->
     <ion-title>Personagem</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,38 +14,80 @@
   </ion-item>
   <ion-grid>
     <ion-row class="atributos">
-        <ion-input> HP:
-          
-        </ion-input>
+      <ion-item>
+        <ion-label>
+          HP = 
+        </ion-label>
+      </ion-item>
+        <ion-input> </ion-input>
     </ion-row>
     <ion-row class="atributos">
-        <ion-input> MANA</ion-input>
+        <ion-item (click)="buttonClick(123)">
+            <ion-label>
+              MANA = 
+            </ion-label>
+          </ion-item>
+        <ion-input> </ion-input>
     </ion-row>
     <ion-row class="atributos">
-        <ion-input> RES</ion-input>
+        <ion-item>
+            <ion-label>
+              RES = 
+            </ion-label>
+          </ion-item>
+        <ion-input> </ion-input>
     </ion-row>
     
   </ion-grid>
+
+  
+<ion-item>
+    <ion-label position="floating">Floating Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-content padding>
+      <ion-row>
+        <ion-input>ATRIBUTOS:</ion-input>
+      </ion-row>
+      <ion-item text-center>
+    
+    </ion-item>
+
+
+  <ion-grid>
+      <ion-row class="atributos">
+        <ion-item>
+          <ion-label>
+            FORÇA = 
+          </ion-label>
+        </ion-item>
+          <ion-input> </ion-input>
+      </ion-row>
+      <ion-row class="atributos">
+          <ion-item (click)="buttonClick(123)">
+              <ion-label>
+                AGILIDADE = 
+              </ion-label>
+            </ion-item>
+          <ion-input> </ion-input>
+      </ion-row>
+      <ion-row class="atributos">
+          <ion-item>
+              <ion-label>
+                INTELIGENCIA = 
+              </ion-label>
+            </ion-item>
+          <ion-input> </ion-input>
+      </ion-row>
+      
+    </ion-grid>
 
 </ion-content>
 
 
 
 
-<ion-menu side="start" menuId="custom" class="my-custom-menu">
-  <ion-header>
-    <ion-toolbar color="Black">
-      <ion-title>Jogador</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>Status</ion-item>
-      <ion-item>Atributos</ion-item>
-      <ion-item>Itens</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
 
 
 

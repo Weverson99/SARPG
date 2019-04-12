@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- linkar com nome do personagem -->
+    <ion-title>Itens de "personagem"</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item-sliding>
+            <ion-item>
+                <ion-label position="floating">Item X</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option (click)="unread(item)">Usar</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      
+        <ion-item-sliding>
+            <ion-item>
+                <ion-label position="floating">Item Y</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option (click)="unread(item)">Usar</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+            <ion-item>
+                <ion-label position="floating">Item Z</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Usar</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+      </ion-list>
+
+
+
+</ion-content>
