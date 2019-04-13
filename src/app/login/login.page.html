@@ -4,6 +4,13 @@
   </ion-toolbar>
 </ion-header>
 
+
+
+<!--Ao clicar em "entrar", redirecionar para a tela inicial (home)-->
+<!--Ao clicar em "registrar", redirecionar para a tela de cadastro (register)-->
+
+
+
 <ion-content padding>
   <ion-item text-center>
     <ion-label>
@@ -26,18 +33,22 @@
   </ion-grid>
 
   <ion-button 
+  expand="block"
+  shape="round"
+  fill="outline"
+  style="margin-top: 20px"
+  (click)="login()"
+  color="medium">
+  Entrar</ion-button>
+
+
+
+      <ion-button 
       expand="block"
       shape="round"
       fill="outline"
       style="margin-top: 20px"
-      (click)="login()"
-      color="light">Entrar</ion-button>
-
-      <ion-button 
-          expand="block"
-          shape="round"
-          fill="outline"
-          style="margin-top: 20px"
-          routerLink="/register"
-          color="light">Registrar</ion-button>
+      (click)="register()"
+      color="medium">
+      registrar</ion-button>
 </ion-content>

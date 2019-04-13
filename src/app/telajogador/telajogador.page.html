@@ -1,87 +1,89 @@
 <ion-header>
   <ion-toolbar>
-    <!-- Linkar nome do personagem -->
     <ion-title>Personagem</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-row>
-    <ion-input>STATUS:</ion-input>
-  </ion-row>
-  <ion-item text-center>
 
-  </ion-item>
+<!--Ao clicar no botão (ITENS) redirecionar para a tela (telajogadoritens) que também está vinculada ao jogador-->
+
+
+<ion-content>
+
+  <ion-row>
+    <ion-item>STATUS:</ion-item>
+  </ion-row>
+  
   <ion-grid>
     <ion-row class="atributos">
       <ion-item>
-        <ion-label>
-          HP = 
-        </ion-label>
+        <ion-label>Pontos de vida=</ion-label>
       </ion-item>
         <ion-input> </ion-input>
     </ion-row>
-    <ion-row class="atributos">
-        <ion-item (click)="buttonClick(123)">
-            <ion-label>
-              MANA = 
-            </ion-label>
-          </ion-item>
-        <ion-input> </ion-input>
-    </ion-row>
-    <ion-row class="atributos">
-        <ion-item>
-            <ion-label>
-              RES = 
-            </ion-label>
-          </ion-item>
-        <ion-input> </ion-input>
-    </ion-row>
-    
   </ion-grid>
-
-  
-<ion-item>
-    <ion-label position="floating">Floating Label</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-content padding>
-      <ion-row>
-        <ion-input>ATRIBUTOS:</ion-input>
-      </ion-row>
-      <ion-item text-center>
-    
-    </ion-item>
-
 
   <ion-grid>
       <ion-row class="atributos">
         <ion-item>
-          <ion-label>
-            FORÇA = 
-          </ion-label>
+          <ion-label>Pontos de Magia=</ion-label>
         </ion-item>
           <ion-input> </ion-input>
       </ion-row>
-      <ion-row class="atributos">
-          <ion-item (click)="buttonClick(123)">
-              <ion-label>
-                AGILIDADE = 
-              </ion-label>
-            </ion-item>
-          <ion-input> </ion-input>
-      </ion-row>
-      <ion-row class="atributos">
-          <ion-item>
-              <ion-label>
-                INTELIGENCIA = 
-              </ion-label>
-            </ion-item>
-          <ion-input> </ion-input>
-      </ion-row>
-      
     </ion-grid>
+
+  <ion-grid>
+    <ion-row class="atributos">
+      <ion-item>
+        <ion-label>Fadiga=</ion-label>
+      </ion-item>
+        <ion-input> </ion-input>
+    </ion-row>
+  </ion-grid>
+ 
+ 
+ 
+ 
+  <ion-row>
+      <ion-item>ATRIBUTOS:</ion-item>
+  </ion-row>
+
+  <ion-grid>
+      <ion-row class="atributos">
+        <ion-item>Força=</ion-item>
+          <ion-input> </ion-input>
+      </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+        <ion-row class="atributos">
+          <ion-item>Agilidade=</ion-item>
+            <ion-input> </ion-input>
+        </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="atributos">
+      <ion-item>Inteligência=</ion-item>
+        <ion-input> </ion-input>
+    </ion-row>
+  </ion-grid>
+   
+  <ion-grid>
+      <ion-row class="atributos">
+        <ion-item>Resistência=</ion-item>
+          <ion-input> </ion-input>
+      </ion-row>
+  </ion-grid>
+     
+  <ion-grid>
+      <ion-row class="atributos">
+        <ion-item>Poder de Fogo=</ion-item>
+          <ion-input> </ion-input>
+      </ion-row>
+  </ion-grid> 
+      
+   
 
 </ion-content>
 
