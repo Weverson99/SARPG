@@ -13,6 +13,8 @@ Abre tela com lobby de mesas  (lobby)
 
 Ao entrar em uma mesa, abre tela com seleção de personagem ou criação de um novo  (selectpersona)
 
+Se selecionar criar um personagem, vai para sua tela (cadpersona)
+
 Ao clicar, redireciona a tela da mesa "ou tela do personagem" (telajogador), (telajogadoritens)
 
 
@@ -45,6 +47,8 @@ Com sala criada abre links para acessar as telas dos jogadores da mesa podendo f
 (lobby)________________________________	{feito}	(editar)
 
 (selectpersona)	_______________________	{feito}	(editar)
+
+(cadpersona)	_________________________ {feito}	(editar)
 
 (telajogador(status, atributos))_______	{feito}	(editar)
 
