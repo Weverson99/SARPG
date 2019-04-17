@@ -13,10 +13,7 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule',
     canActivate: [AuthGuard]
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  },
+  
   { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
   { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
