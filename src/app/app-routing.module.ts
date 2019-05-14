@@ -1,6 +1,7 @@
+import { LoginGuard } from './guards/login.guard';
+//import { AuthGuard } from './guards/auth.guard';
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './guards/auth-guard';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -11,27 +12,24 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './home/home.module#HomePageModule',
-    canActivate: [AuthGuard]
+  //  canActivate: [AuthGuard]
   },
-  
-  { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
-  { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  {
+    path: 'list',
+    loadChildren: './list/list.module#ListPageModule'
+  },
+  { 
+    path: 'login', 
+    loadChildren: './login/login.module#LoginPageModule',
+  //  canActivate: [LoginGuard]
+  },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
-  { path: 'telajogadoritens', loadChildren: './telajogadoritens/telajogadoritens.module#TelajogadoritensPageModule' },
-  { path: 'selectsala', loadChildren: './selectsala/selectsala.module#SelectsalaPageModule' },
-  { path: 'criasala', loadChildren: './criasala/criasala.module#CriasalaPageModule' },
-  { path: 'lobby', loadChildren: './lobby/lobby.module#LobbyPageModule' },
-  { path: 'selectpersona', loadChildren: './selectpersona/selectpersona.module#SelectpersonaPageModule' },
-  { path: 'criapersona', loadChildren: './criapersona/criapersona.module#CriapersonaPageModule' }
-
-
+ // { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsPageModule' },
+ // { path: 'contacts/:id', loadChildren: './contacts/contacts.module#ContactsPageModule' },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

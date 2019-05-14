@@ -1,19 +1,19 @@
-//ion-content {
-//   --ion-background-color: var(--ion-color-dark-tint)
-//}
+ion-content {
+    --ion-background-color: var(--ion-color-dark)
+}
 
 .logo {
-    color: black;
+    color: white;
     font-size: 100pt
 }
 
 h1, h6 {
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .inputStyle {
-    background-color: gray;
+    background-color: white;
     margin-top: 10px;
     padding-left: 5px;
     border-radius: 30px;
