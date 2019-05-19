@@ -1,0 +1,29 @@
+ion-content {
+    --ion-background-color: var(--ion-color-dark)
+}
+
+.atributos {
+    color: black;
+    background-color: white;
+    padding-right: 20px;
+    border-radius: 5px;
+    size: "small";
+
+}
+
+.text{
+    color: white;
+    position: static;
+    text-align: center;
+}
+
+.texttop{
+    --ion-background-color: var(--ion-color-dark);
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-size: 20pt;
+}

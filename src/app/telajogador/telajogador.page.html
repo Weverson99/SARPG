@@ -1,96 +1,92 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Personagem</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title class="texttop">Personagem</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 <!--Ao clicar no botão (ITENS) redirecionar para a tela (telajogadoritens) que também está vinculada ao jogador-->
 
-
 <ion-content>
+  <ion-card padding>
+    <ion-item>
+      <ion-icon  name="person" slot="start" class="logo"></ion-icon>
 
-  <ion-row>
-    <ion-item>STATUS:</ion-item>
-  </ion-row>
-  
-  <ion-grid>
-    <ion-row class="atributos">
-      <ion-item>
-        <ion-label>Pontos de vida=</ion-label>
-      </ion-item>
-        <ion-input> </ion-input>
-    </ion-row>
-  </ion-grid>
+      <!--buscar nome do personagem-->
 
-  <ion-grid>
-      <ion-row class="atributos">
-        <ion-item>
-          <ion-label>Pontos de Magia=</ion-label>
-        </ion-item>
-          <ion-input> </ion-input>
-      </ion-row>
-    </ion-grid>
-
-  <ion-grid>
-    <ion-row class="atributos">
-      <ion-item>
-        <ion-label>Fadiga=</ion-label>
-      </ion-item>
-        <ion-input> </ion-input>
-    </ion-row>
-  </ion-grid>
- 
- 
- 
- 
-  <ion-row>
-      <ion-item>ATRIBUTOS:</ion-item>
-  </ion-row>
-
-  <ion-grid>
-      <ion-row class="atributos">
-        <ion-item>Força=</ion-item>
-          <ion-input> </ion-input>
-      </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-        <ion-row class="atributos">
-          <ion-item>Agilidade=</ion-item>
-            <ion-input> </ion-input>
-        </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row class="atributos">
-      <ion-item>Inteligência=</ion-item>
-        <ion-input> </ion-input>
-    </ion-row>
-  </ion-grid>
-   
-  <ion-grid>
-      <ion-row class="atributos">
-        <ion-item>Resistência=</ion-item>
-          <ion-input> </ion-input>
-      </ion-row>
-  </ion-grid>
-     
-  <ion-grid>
-      <ion-row class="atributos">
-        <ion-item>Poder de Fogo=</ion-item>
-          <ion-input> </ion-input>
-      </ion-row>
-  </ion-grid> 
+      <ion-label class="text" >Personagem</ion-label>
       
-   
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-grid>
+        <ion-item>
+          <ion-label >
+            <ion-row position="center">
+              <ion-col><ion-label class="atributos">HP = </ion-label></ion-col>
+              <ion-col><ion-label class="atributos">MP = </ion-label></ion-col>
+              <ion-col><ion-label class="atributos">RP = </ion-label></ion-col>
+            </ion-row>
+          </ion-label>
+        </ion-item>
+      </ion-grid>
+
+
+      <ion-grid>
+        <ion-item>
+          <ion-label>
+            <ion-row>
+                <ion-col><ion-label class="atributos">Força = </ion-label></ion-col>
+                <ion-col><ion-label class="atributos">Agilidade = </ion-label></ion-col>
+                <ion-col><ion-label class="atributos">Inteligência = </ion-label></ion-col>
+                <ion-col><ion-label class="atributos">Resistência = </ion-label></ion-col>
+                <ion-col><ion-label class="atributos">Poder de fogo = </ion-label></ion-col>
+            </ion-row>
+          </ion-label>
+        </ion-item>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <ion-item>
+          <ion-icon name="bonfire" slot="start" class="logo"></ion-icon>
+          <ion-label class="text">Itens</ion-label>
+        </ion-item>
+      <ion-card-content>
+        <ion-grid >
+          <ion-row>
+            <ion-col 
+            size="12"
+            size-xs="12"
+            size-sm="6"
+            size-md="4"
+            size-lg="3">
+                <ion-card class="atributos">
+                    <ion-card-header>
+          
+                      <ion-card-subtitle class="atributos">
+                        Slot 1
+                      </ion-card-subtitle>
+          
+                      <ion-card-title class="atributos">
+                        Item x
+                      </ion-card-title>
+                    </ion-card-header>
+          
+                    <ion-card-content>
+                      Propriedades do item x.
+                    </ion-card-content>
+                  </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        </ion-card-content>
+  </ion-card>
+
+
+
+
+  
 
 </ion-content>
-
-
-
-
-
-
-
 <ion-router-outlet main></ion-router-outlet>

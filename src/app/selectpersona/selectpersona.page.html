@@ -1,25 +1,33 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>Seleção de Personagens</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <!--Ao selecionar personagem redirecionar para a tela (telajogador)-->
-
+ 
 
 
 <ion-content>
           
       <ion-card>
         <ion-item>
-          <ion-icon name="person" slot="start"></ion-icon>
-          <ion-label>Personagem 1</ion-label>
-          <ion-button fill="outline" slot="end">Selecionar</ion-button>
+          <ion-icon class="logo" name="person" slot="start"></ion-icon>
+          <ion-label class="text">Personagem 1</ion-label>
+          <ion-button
+          expand="block"
+          shape="round"
+          fill="outline"
+          style="margin-top: 20px"
+          fill="outline" 
+          slot="end"
+          color="light">
+          Selecionar</ion-button>
         </ion-item>
       
         <ion-card-content>
             <ion-item>
-                <ion-label position="floating">Observações</ion-label>
+                <ion-label class="text" position="floating">Observações</ion-label>
                 <ion-input></ion-input>
               </ion-item>
           Descrição do personagem
@@ -28,14 +36,22 @@
 
       <ion-card>
           <ion-item>
-            <ion-icon name="person" slot="start"></ion-icon>
-            <ion-label>Personagem 2</ion-label>
-            <ion-button fill="outline" slot="end">Selecionar</ion-button>
+            <ion-icon class="logo" name="person" slot="start"></ion-icon>
+            <ion-label class="text">Personagem 2</ion-label>
+            <ion-button
+            expand="block"
+            shape="round"
+            fill="outline"
+            style="margin-top: 20px"
+            fill="outline" 
+            slot="end"
+            color="light">
+            Selecionar</ion-button>
           </ion-item>
         
           <ion-card-content>
               <ion-item>
-                  <ion-label position="floating">Observações</ion-label>
+                  <ion-label class="text" position="floating">Observações</ion-label>
                   <ion-input></ion-input>
                 </ion-item>
               Descrição do personagem
