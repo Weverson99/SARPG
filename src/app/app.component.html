@@ -1,5 +1,5 @@
 <ion-app>
-  <ion-split-pane>
+  <ion-split-pane color="dark">
       <ion-menu side="start" menuId="custom" class="my-custom-menu">
           <ion-header>
             <ion-toolbar color="Dark">
@@ -8,31 +8,16 @@
           </ion-header>
           <ion-content>
             <ion-list>
-              <ion-button
+              <ion-button (click)="logout()"
                 color="dark"
                 shape="round"
                 fill="outline"
                 size="large"
                 expand="block"
-              >Status</ion-button>
-              <ion-button
-                color="dark"
-                shape="round"
-                fill="outline"
-                size="large"
-                expand="block"
-              >Atributos</ion-button>
-              <ion-button
-                color="dark"
-                shape="round"
-                fill="outline"
-                size="large"
-                expand="block"
-              >Itens</ion-button>
+              >Sair</ion-button>
             </ion-list>
           </ion-content>
         </ion-menu>
-        
       
     <ion-router-outlet main></ion-router-outlet>
   </ion-split-pane>
