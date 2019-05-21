@@ -54,8 +54,6 @@ Com sala criada abre links para acessar as telas dos jogadores da mesa podendo f
 
 (telajogador)__________________________	{feito}	(editar)
 
-(selectsala)___________________________	{feito}	(editar)
-
 (criasala)_____________________________ {feito}	(editar)
 
 (teladomestre)_________________________	{feito}	(editar)
