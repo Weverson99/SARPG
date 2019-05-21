@@ -1,5 +1,5 @@
-//import { LoginGuard } from './guards/login.guard';
-//import { AuthGuard } from './guards/auth.guard';
+import { LoginGuard } from './guards/login.guard';
+import { AuthGuard } from './guards/auth.guard';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './home/home.module#HomePageModule',
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path: 'list',
@@ -21,7 +21,7 @@ const routes: Routes = [
   { 
     path: 'login', 
     loadChildren: './login/login.module#LoginPageModule',
-    //canActivate: [LoginGuard]
+  //  canActivate: [LoginGuard]
   },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
   { path: 'criapersona', loadChildren: './criapersona/criapersona.module#CriapersonaPageModule' },
@@ -32,6 +32,9 @@ const routes: Routes = [
   { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
   { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
   { path: 'telajogadoritens', loadChildren: './telajogadoritens/telajogadoritens.module#TelajogadoritensPageModule' },
+  { path: 'cadpersona', loadChildren: './cadpersona/cadpersona.module#cadpersonaPageModule' },
+  { path: 'jogossalvos', loadChildren: './jogossalvos/jogossalvos.module#JogossalvosPageModule' },
+
  // { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsPageModule' },
  // { path: 'contacts/:id', loadChildren: './contacts/contacts.module#ContactsPageModule' },
 ];

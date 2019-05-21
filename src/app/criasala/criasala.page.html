@@ -28,10 +28,20 @@
       shape="round"
       fill="outline"
       style="margin-bottom: 20px"
-      (click)="Cadpersona()"
-      color="light">Cadastrar</ion-button>
+      color="light"
+      routerLink="/teladomestre">CRIAR SALA</ion-button>
   
     </ion-grid>  
     
-
+    <ion-fab 
+    vertical="bottom"
+    horizontal="start" 
+    slot="fixed">
+     <ion-fab-button
+     routerLink="/home"
+     color="medium">
+     <ion-icon name="arrow-round-back"></ion-icon>
+     </ion-fab-button>
+   </ion-fab>
+   
 </ion-content>

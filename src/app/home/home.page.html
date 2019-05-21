@@ -10,6 +10,7 @@
                 </ion-item>
               
                 <h1>SARPG</h1>
+                <h6>Bem-vindo</h6>
 
                 
     <ion-button 
@@ -17,8 +18,8 @@
         shape="round"
         fill="outline"
         style="margin-top: 20px"
-        (click)="Cadpersona()"
         color="light"
+        routerLink="/lobby"
         >SOU JOGADOR
     </ion-button>
 
@@ -29,12 +30,22 @@
         shape="round"
         fill="outline"
         style="margin-top: 20px"
-        (click)="Cadpersona()"
-        color="light">
+        color="light"
+        routerLink="/criasala">
         SOU MESTRE
     </ion-button>
 
+    <ion-fab 
+         vertical="bottom"
+         horizontal="start" 
+         slot="fixed">
+          <ion-fab-button
+          
+          color="medium">
+          <ion-icon name="log-out"></ion-icon>
+          </ion-fab-button>
+    </ion-fab>
     
-    <!--Redirecionar para a tela de escolha se vai criar ou entar em uma sala (selectsala)-->
+    <!--Redirecionar para a tela de criação de sala (criasala)-->
 
 </ion-content>

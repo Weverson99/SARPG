@@ -107,9 +107,19 @@
       shape="round"
       fill="outline"
       style="margin-bottom: 20px"
-      (click)="Cadpersona()"
-      color="light">Cadastrar</ion-button>
+      color="light"
+      >Cadastrar</ion-button>
   
+      <ion-fab 
+      vertical="bottom"
+      horizontal="start" 
+      slot="fixed">
+       <ion-fab-button
+       routerLink="/selectpersona"
+       color="medium">
+       <ion-icon name="arrow-round-back"></ion-icon>
+       </ion-fab-button>
+     </ion-fab>
 
 </ion-content>
   
