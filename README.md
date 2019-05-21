@@ -1,6 +1,8 @@
 [inicial]
 
 login  (login)
+Se não tiver conta, cria uma (register)
+
 
 home "escolhe se é jogador ou mestre"  (home)
 
@@ -13,18 +15,16 @@ Abre tela com lobby de mesas  (lobby)
 
 Ao entrar em uma mesa, abre tela com seleção de personagem ou criação de um novo  (selectpersona)
 
-Se selecionar criar um personagem, vai para sua tela (cadpersona)
+Se selecionar no botão "(+)criar um personagem", vai para sua tela (cadpersona)
 
-Ao clicar, redireciona a tela da mesa "ou tela do personagem" (telajogador), (telajogadoritens)
+Ao selecionar o personagem, redireciona a tela da mesa "ou tela do personagem" (telajogador)
 
 
 
 
 
 [se mestre]
-Abre tela parar criar sala ou continuar sala antiga  (selectsala)
-
-tela de criação de sala com nome e senha (criasala)
+Abre tela parar criar sala  (criasala)
 
 
 
@@ -40,7 +40,9 @@ Com sala criada abre links para acessar as telas dos jogadores da mesa podendo f
 
 
 
-(login)________________________________	{feito}	(editar)
+(login)________________________________	{feito}	
+
+(register)_____________________________	{feito}	
 
 (home)_________________________________ {feito}	(editar)
 
@@ -48,16 +50,12 @@ Com sala criada abre links para acessar as telas dos jogadores da mesa podendo f
 
 (selectpersona)	_______________________	{feito}	(editar)
 
-(cadpersona)	_________________________ {feito}	(editar)
+(criapersona)	_________________________ {feito}	(editar)
 
-(telajogador(status, atributos))_______	{feito}	(editar)
-
-(telajogadoritens)_____________________	{feito}	(editar)
+(telajogador)__________________________	{feito}	(editar)
 
 (selectsala)___________________________	{feito}	(editar)
 
 (criasala)_____________________________ {feito}	(editar)
 
 (teladomestre)_________________________	{feito}	(editar)
-
-(menu lateral)_________________________	{feito}	(editar)
