@@ -1,5 +1,5 @@
 <ion-header>
-        <ion-toolbar color="dark">
+        <ion-toolbar class="texttop">
           <ion-title>Seleção de Sala</ion-title>
         </ion-toolbar>
       </ion-header>
@@ -26,6 +26,17 @@
         color="light"
         >ENTRAR EM UMA SALA
     </ion-button>
+
+    <ion-fab 
+      vertical="bottom"
+      horizontal="start" 
+      slot="fixed">
+        <ion-fab-button
+        routerLink="/"
+        color="medium">
+          <ion-icon name="arrow-round-back"></ion-icon>
+    </ion-fab-button>
+    </ion-fab>
 </ion-content>
 
 <!--Redirecionar para tela de seleçao de sala (lobby)-->

@@ -11,13 +11,23 @@ ion-content {
 
 }
 
-.text{
-    --ion-background-color: var(--ion-color-dark);
-    
+.native-input{
     color: white;
+    text-decoration-color: white;
+}
+
+.text{
+    color: white;
+    text-decoration-color: white
+}
+
+.texttop{
+    --ion-background-color: var(--ion-color-dark);
+    color: white;
+    text-align: center;
 }
 
 .logo {
     color: white;
     font-size: 20pt;
-} 
+}
