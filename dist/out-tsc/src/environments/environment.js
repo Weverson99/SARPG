@@ -4,12 +4,13 @@
 export var environment = {
     production: false,
     firebase: {
-        apiKey: "AIzaSyD5qV2ac6Ytb18zcnatvFK2IObeM6izFwI",
-        authDomain: "sa-rpg.firebaseapp.com",
-        databaseURL: "https://sa-rpg.firebaseio.com",
-        projectId: "sa-rpg",
-        storageBucket: "sa-rpg.appspot.com",
-        messagingSenderId: "282750469987"
+        apiKey: "AIzaSyDBYz7HQs2UJcgj1sDzvEAOliTSoFZlzOU",
+        authDomain: "sarpg-97c86.firebaseapp.com",
+        databaseURL: "https://sarpg-97c86.firebaseio.com",
+        projectId: "sarpg-97c86",
+        storageBucket: "sarpg-97c86.appspot.com",
+        messagingSenderId: "617907642407",
+        appId: "1:617907642407:web:7ee3ebbb35a72c47"
     }
 };
 /*

@@ -14,14 +14,10 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule',
     canActivate: [AuthGuard]
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  },
   { 
     path: 'login', 
     loadChildren: './login/login.module#LoginPageModule',
-  //  canActivate: [LoginGuard]
+    canActivate: [LoginGuard]
   },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
   { path: 'criapersona', loadChildren: './criapersona/criapersona.module#CriapersonaPageModule' },
@@ -31,8 +27,11 @@ const routes: Routes = [
   { path: 'selectsala', loadChildren: './selectsala/selectsala.module#SelectsalaPageModule' },
   { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
   { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
+<<<<<<< Updated upstream
   { path: 'telajogadoritens', loadChildren: './telajogadoritens/telajogadoritens.module#TelajogadoritensPageModule' },
   { path: 'jogossalvos', loadChildren: './jogossalvos/jogossalvos.module#JogossalvosPageModule' },
+=======
+>>>>>>> Stashed changes
 
  // { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsPageModule' },
  // { path: 'contacts/:id', loadChildren: './contacts/contacts.module#ContactsPageModule' },

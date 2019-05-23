@@ -15,14 +15,13 @@ var RegisterPage = /** @class */ (function () {
             _this.router.navigate(['/login']);
         });
     };
-    var _a;
     RegisterPage = tslib_1.__decorate([
         Component({
             selector: 'app-register',
             templateUrl: './register.page.html',
             styleUrls: ['./register.page.scss'],
         }),
-        tslib_1.__metadata("design:paramtypes", [typeof (_a = typeof AuthServiceService !== "undefined" && AuthServiceService) === "function" ? _a : Object, Router])
+        tslib_1.__metadata("design:paramtypes", [AuthServiceService, Router])
     ], RegisterPage);
     return RegisterPage;
 }());

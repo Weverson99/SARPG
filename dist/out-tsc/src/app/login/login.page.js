@@ -17,14 +17,13 @@ var LoginPage = /** @class */ (function () {
             alert('Dados incorretos');
         });
     };
-    var _a;
     LoginPage = tslib_1.__decorate([
         Component({
             selector: 'app-login',
             templateUrl: './login.page.html',
             styleUrls: ['./login.page.scss'],
         }),
-        tslib_1.__metadata("design:paramtypes", [typeof (_a = typeof AuthServiceService !== "undefined" && AuthServiceService) === "function" ? _a : Object, Router])
+        tslib_1.__metadata("design:paramtypes", [AuthServiceService, Router])
     ], LoginPage);
     return LoginPage;
 }());

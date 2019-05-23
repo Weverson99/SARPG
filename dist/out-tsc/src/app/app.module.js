@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -22,7 +23,8 @@ var AppModule = /** @class */ (function () {
                 IonicModule.forRoot(),
                 AppRoutingModule,
                 AngularFireModule.initializeApp(environment.firebase),
-                AngularFireAuthModule
+                AngularFireAuthModule,
+                AngularFirestoreModule
             ],
             providers: [
                 StatusBar,
