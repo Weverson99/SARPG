@@ -13,7 +13,13 @@ ion-content {
 
 .text{
     color: white;
-    position: static;
+    text-align: center;
+}
+
+.texttop{
+    --ion-background-color: var(--ion-color-dark);
+    color: white;
+    text-align: center;
 }
 
 .logo {

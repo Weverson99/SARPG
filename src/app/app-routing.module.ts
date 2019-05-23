@@ -32,7 +32,6 @@ const routes: Routes = [
   { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
   { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
   { path: 'telajogadoritens', loadChildren: './telajogadoritens/telajogadoritens.module#TelajogadoritensPageModule' },
-  { path: 'cadpersona', loadChildren: './cadpersona/cadpersona.module#cadpersonaPageModule' },
   { path: 'jogossalvos', loadChildren: './jogossalvos/jogossalvos.module#JogossalvosPageModule' },
 
  // { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsPageModule' },

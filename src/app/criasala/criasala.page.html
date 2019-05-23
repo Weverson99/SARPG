@@ -1,26 +1,36 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title class="texttop" >Criar uma Nova Sala</ion-title>
+    <ion-title class="texttop">
+    Criar uma Nova Sala</ion-title>
   </ion-toolbar>
 </ion-header>
  
 <ion-content>
   <ion-grid>
     <ion-item>
-        <ion-label class="text" position="floating">Nome da Sala</ion-label>
+        <ion-label 
+        class="text"
+        position="floating">
+        Nome da Sala</ion-label>
         <ion-input></ion-input>
-      </ion-item>
+    </ion-item>
 
     <ion-item>
-        <ion-label class="text" position="floating">Max de Jogadores</ion-label>
+        <ion-label 
+        class="text"
+        position="floating">
+        Max de Jogadores</ion-label>
         <ion-input></ion-input>
-      </ion-item>
+    </ion-item>
 
     <ion-item>
-        <ion-label class="text" position="floating">Tema</ion-label>
+        <ion-label 
+        class="text"
+        position="floating">
+        Tema</ion-label>
         <ion-input></ion-input>
-      </ion-item>
-    </ion-grid>
+    </ion-item>
+  </ion-grid>
 <ion-grid>
 
       <ion-button 
@@ -29,19 +39,20 @@
       fill="outline"
       style="margin-bottom: 20px"
       color="light"
-      routerLink="/teladomestre">CRIAR SALA</ion-button>
+      routerLink="/teladomestre">
+      CRIAR SALA</ion-button>
   
     </ion-grid>  
     
-    <ion-fab 
-    vertical="bottom"
-    horizontal="start" 
-    slot="fixed">
-     <ion-fab-button
-     routerLink="/home"
-     color="medium">
-     <ion-icon name="arrow-round-back"></ion-icon>
-     </ion-fab-button>
-   </ion-fab>
+  <ion-fab 
+      vertical="bottom"
+      horizontal="start" 
+      slot="fixed">
+    <ion-fab-button
+      routerLink="/home"
+      color="medium">
+        <ion-icon name="arrow-round-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
    
 </ion-content>
