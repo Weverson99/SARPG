@@ -27,11 +27,7 @@ const routes: Routes = [
   { path: 'selectsala', loadChildren: './selectsala/selectsala.module#SelectsalaPageModule' },
   { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
   { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
-<<<<<<< Updated upstream
-  { path: 'telajogadoritens', loadChildren: './telajogadoritens/telajogadoritens.module#TelajogadoritensPageModule' },
-  { path: 'jogossalvos', loadChildren: './jogossalvos/jogossalvos.module#JogossalvosPageModule' },
-=======
->>>>>>> Stashed changes
+  { path: 'criasala/:id', loadChildren: './criasala/criasala.module#CriasalaPageModule' },
 
  // { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsPageModule' },
  // { path: 'contacts/:id', loadChildren: './contacts/contacts.module#ContactsPageModule' },

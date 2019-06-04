@@ -20,11 +20,11 @@
     <ion-row>
         <ion-item>
             <ion-label class="text" position="floating">Nome do Personagem</ion-label>
-            <ion-input></ion-input>
+            <ion-input [(ngModel)]="criapersona.nome"></ion-input>
           </ion-item>
     </ion-row>
   </ion-grid>
-
+<!--
 <ion-grid>
 
 
@@ -101,8 +101,9 @@
 
     
 </ion-grid>
-
+  -->
     <ion-button 
+      (click)="add()"
       expand="block"
       shape="round"
       fill="outline"

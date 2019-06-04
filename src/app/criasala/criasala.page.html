@@ -12,7 +12,7 @@
         class="text"
         position="floating">
         Nome da Sala</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="sala.nome"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -20,7 +20,7 @@
         class="text"
         position="floating">
         Max de Jogadores</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="sala.jogadores"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -28,12 +28,12 @@
         class="text"
         position="floating">
         Tema</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="sala.tema"></ion-input>
     </ion-item>
   </ion-grid>
 <ion-grid>
 
-      <ion-button 
+      <ion-button (click)="add()"
       expand="block"
       shape="round"
       fill="outline"
