@@ -38,12 +38,7 @@ export class CriasalaPage implements OnInit {
     else {
       this.salaService.addSala(this.sala);
     }
-    this.router.navigate(['/home']);
-  }
-
-  remove() {
-    this.router.navigate(['/home']);
-    this.salaService.remove(this.salaId);
+    this.router.navigate(['/teladomestre']);
   }
 
 }

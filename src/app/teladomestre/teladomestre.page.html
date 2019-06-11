@@ -35,37 +35,11 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card>
-        <ion-item>
-          <ion-icon
-          class="logo"
-          name="person" 
-          slot="start"></ion-icon>
-            <ion-label 
-            class="text">
-            Personagem 2</ion-label>
-              <ion-button 
-              expand="block"
-              shape="round"
-              fill="outline"
-              style="margin-top: 20px"
-              fill="outline" 
-              slot="end"
-              color="light">
-              Selecionar</ion-button>
-        </ion-item>
-      
-        <ion-card-content>
-            <ion-item>
-                <ion-label 
-                class="text"
-                position="floating">
-                Observações</ion-label>
-                <ion-input></ion-input>
-            </ion-item>
-            Descrição do personagem
-        </ion-card-content>
-    </ion-card>
+    <ion-list>
+      <ion-item *ngFor="let criapersona of criapersonas" lines="inset" button [routerLink]="['/criapersona',criapersona.id]">
+        <ion-label>{{ criapersonas.nome }}</ion-label>
+      </ion-item>     
+    </ion-list> 
 
     <ion-fab 
       vertical="bottom"

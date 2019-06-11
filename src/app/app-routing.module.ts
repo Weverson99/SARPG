@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'selectsala', loadChildren: './selectsala/selectsala.module#SelectsalaPageModule' },
   { path: 'teladomestre', loadChildren: './teladomestre/teladomestre.module#TeladomestrePageModule' },
   { path: 'telajogador', loadChildren: './telajogador/telajogador.module#TelajogadorPageModule' },
-  { path: 'criasala/:id', loadChildren: './criasala/criasala.module#CriasalaPageModule' },
+  { path: 'criapersona/:id', loadChildren: './criapersona/criapersona.module#CriapersonaPageModule' },
 
  // { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsPageModule' },
  // { path: 'contacts/:id', loadChildren: './contacts/contacts.module#ContactsPageModule' },
